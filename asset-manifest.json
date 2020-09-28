@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/spotify-stats/static/css/main.3ab8875a.chunk.css",
+    "main.js": "/spotify-stats/static/js/main.d091b8b9.chunk.js",
+    "main.js.map": "/spotify-stats/static/js/main.d091b8b9.chunk.js.map",
+    "runtime-main.js": "/spotify-stats/static/js/runtime-main.1f1c932b.js",
+    "runtime-main.js.map": "/spotify-stats/static/js/runtime-main.1f1c932b.js.map",
+    "static/js/2.9ba17319.chunk.js": "/spotify-stats/static/js/2.9ba17319.chunk.js",
+    "static/js/2.9ba17319.chunk.js.map": "/spotify-stats/static/js/2.9ba17319.chunk.js.map",
+    "index.html": "/spotify-stats/index.html",
+    "precache-manifest.800bde190e18a3fe17aea3c7aff4b5ef.js": "/spotify-stats/precache-manifest.800bde190e18a3fe17aea3c7aff4b5ef.js",
+    "service-worker.js": "/spotify-stats/service-worker.js",
+    "static/css/main.3ab8875a.chunk.css.map": "/spotify-stats/static/css/main.3ab8875a.chunk.css.map",
+    "static/js/2.9ba17319.chunk.js.LICENSE.txt": "/spotify-stats/static/js/2.9ba17319.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f1c932b.js",
+    "static/js/2.9ba17319.chunk.js",
+    "static/css/main.3ab8875a.chunk.css",
+    "static/js/main.d091b8b9.chunk.js"
+  ]
+}
