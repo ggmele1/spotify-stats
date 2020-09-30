@@ -1,19 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 .main {
-  background-color: #0f0f0f;
   font-family: 'Poppins', sans-serif;
   color: #efefef;
 }
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
-.heading {
+.logout-button {
+  font-size: 1.1rem !important;
+  color: #e0e0e0 !important;
   font-family: 'Poppins', sans-serif !important;
-  font-weight: 700 !important;
-  color: #efefef;
+  font-weight: 400 !important;
+  text-transform: none !important;
+}
+.heading-text {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: -.1rem !important;
+  color: #e0e0e0;
+}
+
+.small-heading-text {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 900 !important;
+  color: #e0e0e0;
+}
+
+.heading-text-margin {
+  margin: 1rem !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: -.1rem !important;
+  color: #e0e0e0;
+}
+
+.body-text {
+  margin-top: 1rem !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400 !important;
+  color: #e0e0e0;
 }
 
 .App {
   text-align: center;
+}
+
+.container {
+  padding: 5px !important;
 }
 
 .menu {
@@ -24,17 +63,82 @@
 }
 
 .App-header {
+  margin-top: 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
+.logo-div {
+  margin: .7rem;
+}
+
+.logo {
+  height: auto;
+  max-width: 175px;
+}
+
+.cards {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.card-div1 {
+  animation:vibrate-1 10s ease-in-out infinite backwards;  
+}
+
+.card-div2 {
+  animation:vibrate-1 7s ease-in-out infinite backwards;
+  margin-right: -20px;
+  z-index: -2;
+}
+
+.card-div3 {
+  animation:vibrate-1 8s ease-in-out infinite backwards;
+  margin-left: -20px;
+  z-index: -2;
+}
+
+.card {
+    border-radius: 1.2rem;
+    box-shadow: -5px 9px 16px -10px rgba(0,0,0,0.75);
+    align-self: center;
+    height: auto;
+    max-width: 100%;
+}
+
+ @keyframes vibrate-1{0%{transform:translate(0) scale(1)}20%{transform:translate(-1px,1px) scale(1.01)}40%{transform:translate(-2px,-2px) scale(1)}60%{transform:translate(1px,1px) scale(1.01)}80%{transform:translate(1px,-1px) scale(1)}100%{transform:translate(0) scale(1.)}}
+
 .login-button {
-  margin-top: 25px;
-  width: 100% !important;
-  height: 55px !important;
+  text-align: left;
+}
+
+.small-button {
+  margin: 10px !important;
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: none !important;
+  margin-top: 1.5rem !important;
+  width: 135px !important;
+  height: 40px !important;
+  border-radius: 40px !important;
+}
+
+.large-button {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: none !important;
+  margin-top: 1.5rem !important;
+  width: 175px !important;
+  height: 40px !important;
   border-radius: 40px !important;
 }
 
@@ -47,9 +151,6 @@
   color: #0f0f0f;
 }
 
-.heading {
-  margin-top: 60px;
-}
 
 @keyframes App-logo-spin {
   from {

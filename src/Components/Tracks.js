@@ -1,75 +1,71 @@
 import React from "react";
 import "./Data.css";
 import "../App.css";
-import { makeStyles } from "@material-ui/core/styles";
-import { Typography, Container, Grid } from "@material-ui/core";
+import { makeStyles, theme } from "@material-ui/core/styles";
+import { Typography, Container, Card, CardContent, CardMedia} from "@material-ui/core";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginBottom: '1rem',
+    height: '150px',
+    maxWidth: '400px',
+    backgroundColor: "#1c1c1c",
+    },
+  details: {
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
+  content: {
+    color: '#e0e0e0',
+    textAlign: 'left',
+    flex: '1 0 auto',
   },
+  cover: {
+    width: '100%',
+    maxWidth: 151,
+  },
+  heading: {
+    margin: '1rem',
+  },
+  artistName: {
+    opacity: '70%'
+  }
 }));
+
 
 const UserTracks = (props) => {
   const classes = useStyles();
   const usersData = props.items;
   let count = 1;
   const tracksData = usersData.map((artist) => (
-    <div className={classes.root}>
-      <Grid
-        container
-        spacing={6}
-        className="grid"
-        direction="row"
-        justify="space-between"
-        alignItems="flex-start"
-      >
-        <Grid item xs={3} className="artist-info">
-          <Grid item xs={3}>
-            <Typography variant="h5" align="left" className="count">
-              #{count++}
-            </Typography>
-          </Grid>
-          <Grid item xs={3} fontWeight="fontWeightBold" m={1}>
-            <Typography variant="h5" className="artistName">
-              {artist.name}
-            </Typography>
-            <Typography variant="h6" className="artistName">
-              {artist.artists[0].name}
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid item xs={6}>
-          <a
-            href={artist.external_urls.spotify}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={artist.album.images[0].url}
-              alt="artist"
-              className="image"
-            />
-          </a>
-        </Grid>
-      </Grid>
-    </div>
+  <Card className={classes.root}>
+      <div className={classes.details}>
+        <CardContent className={classes.content}>
+        <Typography component="h5" variant="h6" className="small-heading-text">
+            #{count++}
+          </Typography>
+          <Typography component="h5" variant="h6" className="small-heading-text">
+            {artist.name}
+          </Typography>
+          <Typography variant="subtitle1" className={classes.artistName}>
+            {artist.artists[0].name}
+          </Typography>
+        </CardContent>
+      </div>
+      <CardMedia
+        className={classes.cover}
+        image={artist.album.images[0].url}
+        title="Live from space album cover"
+      />
+  </Card>
   ));
   return (
-    <Container>
+    <Container className="container">
       <div>
-        <Typography
-          variant="h4"
-          align="center"
-          className="heading heading-margin"
-        >
-          Your Top Favorite Tracks
-        </Typography>
         {tracksData}
       </div>
     </Container>

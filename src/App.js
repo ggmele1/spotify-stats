@@ -1,13 +1,14 @@
 import React from "react";
 import axios from "axios";
-import { authEndpoint, clientId, redirectUri, scopes } from "./config";
 import hash from "./hash";
 import Home from "./Components/Home";
 import Artists from "./Components/Artists";
-import Menu from "./Components/Menu";
-import UserTracks from "./Components/Tracks";
+import Tracks from "./Components/Tracks";
+import Login from "./Components/Login";
+import logo from "./logo.png";
+
 import "./App.css";
-import { Typography, CssBaseline, Button, Container } from "@material-ui/core";
+import { CssBaseline, Container, Button } from "@material-ui/core";
 
 class App extends React.Component {
   constructor() {
@@ -29,19 +30,9 @@ class App extends React.Component {
       ],
       no_data: true,
     };
-    this.getUserTopArtist = this.getUserTopArtist.bind(this);
+    this.getUserData = this.getUserData.bind(this);
   }
-
-  handleClick = (event) => {
-    const { token } = this.state;
-    // this.setState({range})
-    this.getUserTopArtist(token, event);
-  };
-
-  logOut = () => {
-    this.setState({ token: null });
-  };
-
+  
   componentDidMount() {
     // Sets token
     let _token = hash.access_token;
@@ -52,19 +43,32 @@ class App extends React.Component {
       console.log("componentDidMount RAN");
     }
   }
+  
+  handleClick = (event) => {
+    const { token } = this.state;
+    this.getUserData(token, event, "medium_term");
+  };
+  
+  handleTimeRange = (timeRange) => {
+    const { token, request } = this.state;
+    this.getUserData(token, request, timeRange)
+  }
 
-  getUserTopArtist = async (token, request) => {
-    console.log("axios.get RAN");
+  logOut = () => {
+    this.setState({ token: null });
+  };
+
+  getUserData = async (token, request, timeRange) => {
     await axios
       .get(`https://api.spotify.com/v1/me/top/${request}`, {
-        params: { limit: 50, time_range: "long_term" },
+        params: { limit: 50, time_range: timeRange },
         headers: {
           Authorization: "Bearer " + token,
         },
       })
       .then((res) => {
         const userData = res.data;
-        console.log("getUserTopArtist .THEN");
+        console.log("getUserData .THEN");
         this.setState({
           items: userData.items,
           no_data: false,
@@ -78,37 +82,24 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <CssBaseline />
-        <Container className="main">
+        <div className="nav">
+          <div className="logo-div">
+            <img src={logo} alt="logo" className="logo"/>
+          </div>
           {this.state.token && (
             <div className="menu">
-              <Menu logOut={this.logOut} handleClick={this.handleClick} />
+              <Button className="logout-button" onClick={() => this.logOut()}>| Logout</Button>
             </div>
           )}
+        </div>
+        <Container className="container">
           <div className="App">
             <header className="App-header">
               {!this.state.token && (
-                <div className="login">
-                  <div>
-                    <Typography variant="h4" align="left" className="heading">
-                      Login with your Spotify!
-                    </Typography>
-                  </div>
-                  <div className="login-button">
-                    <Button
-                      variant="contained"
-                      className="login-button"
-                      color="primary"
-                      href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-                        "%20"
-                      )}&response_type=token&show_dialog=true`}
-                    >
-                      <Typography>Login</Typography>
-                    </Button>
-                  </div>
-                </div>
+                <Login />
               )}
-              {this.state.token && this.state.no_data && (
-                <Home handleClick={this.handleClick} />
+              {this.state.token &&  (
+                <Home state={this.state} handleClick={this.handleClick} handleTimeRange={this.handleTimeRange}/>
               )}
               {this.state.token &&
                 !this.state.no_data &&
@@ -122,7 +113,7 @@ class App extends React.Component {
               {this.state.token &&
                 !this.state.no_data &&
                 this.state.request === "tracks" && (
-                  <UserTracks items={this.state.items} className="user" />
+                  <Tracks items={this.state.items} className="user" />
                 )}
             </header>
           </div>

@@ -1,11 +1,8 @@
 body {
-  background-color: #0f0f0f !important;
+  background: rgb(18,18,18) !important;
+  background: linear-gradient(0deg, rgba(18,18,18,1) 10%, rgba(76,221,195,1) 110%) !important;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
