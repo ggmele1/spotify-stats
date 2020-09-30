@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/spotify-stats/static/css/main.3ab8875a.chunk.css",
-    "main.js": "/spotify-stats/static/js/main.18484d31.chunk.js",
-    "main.js.map": "/spotify-stats/static/js/main.18484d31.chunk.js.map",
+    "main.css": "/spotify-stats/static/css/main.56cecf6a.chunk.css",
+    "main.js": "/spotify-stats/static/js/main.63e48c8d.chunk.js",
+    "main.js.map": "/spotify-stats/static/js/main.63e48c8d.chunk.js.map",
     "runtime-main.js": "/spotify-stats/static/js/runtime-main.1f1c932b.js",
     "runtime-main.js.map": "/spotify-stats/static/js/runtime-main.1f1c932b.js.map",
-    "static/js/2.9ba17319.chunk.js": "/spotify-stats/static/js/2.9ba17319.chunk.js",
-    "static/js/2.9ba17319.chunk.js.map": "/spotify-stats/static/js/2.9ba17319.chunk.js.map",
+    "static/js/2.97531c7a.chunk.js": "/spotify-stats/static/js/2.97531c7a.chunk.js",
+    "static/js/2.97531c7a.chunk.js.map": "/spotify-stats/static/js/2.97531c7a.chunk.js.map",
     "index.html": "/spotify-stats/index.html",
-    "precache-manifest.24e82d269d29ac16ef21847ec641444b.js": "/spotify-stats/precache-manifest.24e82d269d29ac16ef21847ec641444b.js",
+    "precache-manifest.1435c7c1189d4f81f06e4cdd95bd6999.js": "/spotify-stats/precache-manifest.1435c7c1189d4f81f06e4cdd95bd6999.js",
     "service-worker.js": "/spotify-stats/service-worker.js",
-    "static/css/main.3ab8875a.chunk.css.map": "/spotify-stats/static/css/main.3ab8875a.chunk.css.map",
-    "static/js/2.9ba17319.chunk.js.LICENSE.txt": "/spotify-stats/static/js/2.9ba17319.chunk.js.LICENSE.txt"
+    "static/css/main.56cecf6a.chunk.css.map": "/spotify-stats/static/css/main.56cecf6a.chunk.css.map",
+    "static/js/2.97531c7a.chunk.js.LICENSE.txt": "/spotify-stats/static/js/2.97531c7a.chunk.js.LICENSE.txt",
+    "static/media/card1.png": "/spotify-stats/static/media/card1.cadd4d3a.png",
+    "static/media/card2.png": "/spotify-stats/static/media/card2.3cb95990.png",
+    "static/media/card3.png": "/spotify-stats/static/media/card3.4bdc299d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1f1c932b.js",
-    "static/js/2.9ba17319.chunk.js",
-    "static/css/main.3ab8875a.chunk.css",
-    "static/js/main.18484d31.chunk.js"
+    "static/js/2.97531c7a.chunk.js",
+    "static/css/main.56cecf6a.chunk.css",
+    "static/js/main.63e48c8d.chunk.js"
   ]
 }
