@@ -1,7 +1,7 @@
 # spotMyTaste
-Solarized dark             |  Solarized Ocean
+            |  
 :-------------------------:|:-------------------------:
-![Image of home page](https://lh3.googleusercontent.com/q3csEHevJr7auU7zjjWulF-vlJzo0mVK2Xd9y3H4U-VUQZ_KSAR259nPU8wrcaH8-FNV1HiId3EKnPNqw1ZZwmUuLbSeBuL-L0gVcBlw4awxSvUm1NjoRW6fAy4d0K2cFU7kuFG_Hxv6Gv_57F2x81UcdnKLVmvtPRtXGXedKHU--BTEvGqKNyR6bUMxVIp_v81Xm0josmsEo6QmAfwXe6VkBenJ1uWzi8FLejPJBFKg10_i9nr8DaoQPLHJB9edEmjiCOwzluIkNC66ypd7uDzNiSV47O6WpWZb2a_smB2t53vUynObcCK4xMPdv9Twd8jCGF1XtrDb3Me7mGshtdH89AY0wGDwGO_g7THSN5JiQpy-kInq7XkaIpNl4VTFIDmprmBheReDMNK-RpPPywnmnpPnDCd3aWpLaYJxXWa9Yw0HvERrBL4SAaqfIPjjHFnSHIFpTWC5q7GlAAnlaaBjmLv52-yIfDcAFIQB7r0BHgrvkmPtgiWZsgaUK9mXD0dZyn89xKMuL52wpl3l7Bn-IIwJcBvEOeoIwW2I0ddOtkI3x8c-yLY4DDWXtNXcMLxOv2xLJsmJq8LrrF-kffhthOSv-IgKufp02K1iQCPeNjSZJjhaeg6mJPepoCkl-GcbNURZG7IgFgpoIxbeeWw3ZreUnZi85ILyRyg7HOEGlmNlfmwWPo1iZd2G=s500-no?authuser=0)  |  ![Image of home page](https://lh3.googleusercontent.com/q3csEHevJr7auU7zjjWulF-vlJzo0mVK2Xd9y3H4U-VUQZ_KSAR259nPU8wrcaH8-FNV1HiId3EKnPNqw1ZZwmUuLbSeBuL-L0gVcBlw4awxSvUm1NjoRW6fAy4d0K2cFU7kuFG_Hxv6Gv_57F2x81UcdnKLVmvtPRtXGXedKHU--BTEvGqKNyR6bUMxVIp_v81Xm0josmsEo6QmAfwXe6VkBenJ1uWzi8FLejPJBFKg10_i9nr8DaoQPLHJB9edEmjiCOwzluIkNC66ypd7uDzNiSV47O6WpWZb2a_smB2t53vUynObcCK4xMPdv9Twd8jCGF1XtrDb3Me7mGshtdH89AY0wGDwGO_g7THSN5JiQpy-kInq7XkaIpNl4VTFIDmprmBheReDMNK-RpPPywnmnpPnDCd3aWpLaYJxXWa9Yw0HvERrBL4SAaqfIPjjHFnSHIFpTWC5q7GlAAnlaaBjmLv52-yIfDcAFIQB7r0BHgrvkmPtgiWZsgaUK9mXD0dZyn89xKMuL52wpl3l7Bn-IIwJcBvEOeoIwW2I0ddOtkI3x8c-yLY4DDWXtNXcMLxOv2xLJsmJq8LrrF-kffhthOSv-IgKufp02K1iQCPeNjSZJjhaeg6mJPepoCkl-GcbNURZG7IgFgpoIxbeeWw3ZreUnZi85ILyRyg7HOEGlmNlfmwWPo1iZd2G=s500-no?authuser=0)(https://...Ocean.png)
+![](https://photos.google.com/photo/AF1QipMnLZmiu73myvy-r1zpb88MmyqILL98Xa6KNase)  |  ![](https://photos.google.com/photo/AF1QipMnLZmiu73myvy-r1zpb88MmyqILL98Xa6KNase)
 
 
 
