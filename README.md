@@ -1,3 +1,7 @@
+![Image of home page](https://photos.google.com/photo/AF1QipMYW-8Dh9JrIMQ0jWBR3DIqbBXtmcI7bCPdhPOF)
+
+[spotMyTaste](https://ggmele1.github.io/spotify-stats/) is web application that uses the Spotify Developer API. View your most listened tracks and artists and switch between 3 different time periods.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
