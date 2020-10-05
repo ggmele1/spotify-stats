@@ -1,8 +1,6 @@
 # spotMyTaste
-            |  
-:-------------------------:|:-------------------------:
-![](https://photos.google.com/photo/AF1QipMnLZmiu73myvy-r1zpb88MmyqILL98Xa6KNase)  |  ![](https://photos.google.com/photo/AF1QipMnLZmiu73myvy-r1zpb88MmyqILL98Xa6KNase)
 
+![home-screen](https://lh3.googleusercontent.com/acbEnFIaxX0mF5H5dt7vvCSjNOOUxlfwurJBnz-pZqZdOdO7CrtcL62Dlkzlzwr0HDD0sQUAunNjOUW54Ottwm66PH890NX7i3xtIiQFmBpbp0CdPaMob6N-Mspt4xBz3Xa0-3mZBWFtuIeN8JcOF3qyXkPs-Az0xlbX8HvEltDxAVem7x6Te6JRnd5GDpyCO8o46z5q0A7ARQNFgZpCIO3KYM2-wKUPn18584ZeQw5qtsnVLUES-MIwlSsqt0y9umKZwpAudOARHr3a9iltv1I616R2hdysjlmzya7xTL6xrH-LLFlKZbpKynUNwdqO0SCjQ_is9AfJs9DrWwDh5rxoVuskA3ViEX1MRrOWWjchs3aMZEnHnV-1JmI_M_tyTP53ePNZYBWjFOVDM_EvHY11N1U1_Jc2mm_QFWOSCrncJYolgMroJlpRWen8Xxl4RDSHel-VKuiL0hwB-m1mx_CtL1ZEO4agLfLQi4575IKuHM_wTvMcsYVM3JGj43ztqAm3fYKyXxDD5b1iszeBvVU75-KleJjeBtCmuyPuv_wDN-6uLQiYKezF6IgiHp4V_rXPx6nWN0r2RGlOr-3Lvftye4sxBOkOxv8KDMTiYjpeI8OQ0CCvpc53XbQkvRF36PqJrq5F7AjiFTPEt7XVv9rgGWjPI9PTbmAtFXdu-7ZQkQKVXIA7vzOcyICj=s328-no?authuser=0)
 
 
 
