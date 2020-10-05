@@ -9,7 +9,7 @@ import {
   InputLabel,
   MenuItem,
   FormControl,
-  Select
+  Select,
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
   },
   formControl: {
     minWidth: 200,
-
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -27,9 +26,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = (props) => {
   const classes = useStyles();
-  const [timeRanges, setTimeRange] = React.useState('');
-
+  const [timeRanges, setTimeRange] = React.useState("");
   const handleChange = (event) => {
+    // Sets time range selected
     setTimeRange(event.target.value);
     props.handleTimeRange(event.target.value);
   };
@@ -37,33 +36,26 @@ const Home = (props) => {
   return (
     <Container className="container">
       <div className={classes.root}>
-        <Grid
-          container
-          spacing={1}
-          direction="column"
-          justify="center"
-          alignItems="center"
-        >
+        <Grid container spacing={1}>
           <Grid item xs={12}>
-            <Typography variant="h3" align="left" noWrap="false" className="heading-text">
+            <Typography
+              variant="h3"
+              align="center"
+              noWrap
+              className="heading-text"
+            >
               Spotify stats.
             </Typography>
-            <Typography variant="body1" align="left" className="body-text">
-               What would you like to see?
-                </Typography>
+            <Typography variant="body1" align="center" className="body-text">
+              What would you like to see?
+            </Typography>
           </Grid>
-          <Grid
-            item
-            xs={12}
-            direction="row"
-            justify="space-evenly"
-            alignItems="center"
-          >
+          <Grid item xs={12}>
             <Button
               className="small-button"
               variant="contained"
               color="primary"
-              onClick={() => props.handleClick("artists")}
+              onClick={() => props.getRequestedStats("artists")}
             >
               View Artists
             </Button>
@@ -71,7 +63,7 @@ const Home = (props) => {
               className="small-button"
               variant="contained"
               color="secondary"
-              onClick={() => props.handleClick("tracks")}
+              onClick={() => props.getRequestedStats("tracks")}
             >
               View Tracks
             </Button>
@@ -79,23 +71,24 @@ const Home = (props) => {
         </Grid>
       </div>
       {props.state.token && !props.state.no_data && (
-      <div className="timeRangeSelector">
-        <FormControl className={classes.formControl}>
-        <InputLabel id="demo-simple-select-label">Time Range</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={timeRanges}
-          onChange={handleChange}
-        >
-            <MenuItem value={"short_term"}>4 Weeks</MenuItem>
-            <MenuItem value={"medium_term"}>6 Months</MenuItem>
-            <MenuItem value={"long_term"}>All Time</MenuItem>
-          </Select>
-        </FormControl>
-      </div>
+        <div className="timeRangeSelector">
+          <FormControl className={classes.formControl}>
+            <InputLabel id="demo-simple-select-label">Time Range</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={timeRanges}
+              onChange={handleChange}
+            >
+              <MenuItem value={"short_term"}>4 Weeks</MenuItem>
+              <MenuItem value={"medium_term"}>6 Months</MenuItem>
+              <MenuItem value={"long_term"}>All Time</MenuItem>
+            </Select>
+          </FormControl>
+        </div>
       )}
     </Container>
   );
 };
+
 export default Home;

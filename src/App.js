@@ -32,7 +32,7 @@ class App extends React.Component {
     };
     this.getUserData = this.getUserData.bind(this);
   }
-  
+
   componentDidMount() {
     // Sets token
     let _token = hash.access_token;
@@ -40,19 +40,18 @@ class App extends React.Component {
       this.setState({
         token: _token,
       });
-      console.log("componentDidMount RAN");
     }
   }
-  
-  handleClick = (event) => {
+
+  getRequestedStats = (event) => {
     const { token } = this.state;
     this.getUserData(token, event, "medium_term");
   };
-  
+
   handleTimeRange = (timeRange) => {
     const { token, request } = this.state;
-    this.getUserData(token, request, timeRange)
-  }
+    this.getUserData(token, request, timeRange);
+  };
 
   logOut = () => {
     this.setState({ token: null });
@@ -68,13 +67,11 @@ class App extends React.Component {
       })
       .then((res) => {
         const userData = res.data;
-        console.log("getUserData .THEN");
         this.setState({
           items: userData.items,
           no_data: false,
           request: request,
         });
-        console.log(userData.items);
       });
   };
 
@@ -84,36 +81,36 @@ class App extends React.Component {
         <CssBaseline />
         <div className="nav">
           <div className="logo-div">
-            <img src={logo} alt="logo" className="logo"/>
+            <img src={logo} alt="logo" className="logo" />
           </div>
           {this.state.token && (
             <div className="menu">
-              <Button className="logout-button" onClick={() => this.logOut()}>| Logout</Button>
+              <Button className="logout-button" onClick={() => this.logOut()}>
+                | Logout
+              </Button>
             </div>
           )}
         </div>
         <Container className="container">
           <div className="App">
             <header className="App-header">
-              {!this.state.token && (
-                <Login />
-              )}
-              {this.state.token &&  (
-                <Home state={this.state} handleClick={this.handleClick} handleTimeRange={this.handleTimeRange}/>
+              {!this.state.token && <Login />}
+              {this.state.token && (
+                <Home
+                  state={this.state}
+                  getRequestedStats={this.getRequestedStats}
+                  handleTimeRange={this.handleTimeRange}
+                />
               )}
               {this.state.token &&
                 !this.state.no_data &&
                 this.state.request === "artists" && (
-                  <Artists
-                    handleClick={this.handleClick}
-                    items={this.state.items}
-                    className="user"
-                  />
+                  <Artists items={this.state.items} />
                 )}
               {this.state.token &&
                 !this.state.no_data &&
                 this.state.request === "tracks" && (
-                  <Tracks items={this.state.items} className="user" />
+                  <Tracks items={this.state.items} />
                 )}
             </header>
           </div>
