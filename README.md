@@ -1,4 +1,4 @@
-# spotMyTaste
+# Spot My Taste
 
 
 [spotMyTaste](https://ggmele1.github.io/spotify-stats/) is web application that uses the Spotify Developer API. View your most listened tracks and artists and switch between 3 different time periods.
