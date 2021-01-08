@@ -1,5 +1,4 @@
 import React from "react";
-import "./Data.css";
 import "../App.css";
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -86,7 +85,7 @@ const Artists = (props) => {
     </a>
   ));
   return (
-    <Container className="content">
+    <Container className="artist-content-wrapper">
       <div>{artistData}</div>
     </Container>
   );
